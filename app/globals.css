@@ -2,26 +2,119 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Hide default cursor */
+* {
+  cursor: none !important;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Custom cursor styles */
+.custom-cursor {
+  width: 12px;
+  height: 12px;
+  background: rgba(234, 179, 8, 0.6);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  transition: width 0.2s ease, height 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+  transform-origin: center;
+  will-change: transform;
+  box-shadow: 0 0 10px rgba(234, 179, 8, 0.4);
+}
+
+/* Optional: Scale effect on clickable elements */
+a:hover ~ .custom-cursor,
+button:hover ~ .custom-cursor {
+  width: 16px;
+  height: 16px;
+  background: rgba(234, 179, 8, 0.8);
+  box-shadow: 0 0 15px rgba(234, 179, 8, 0.6);
+}
+
+:root {
+  --background-start: #151e2c;
+  --background-end: #0c1220;
+  --text-largest: #e2e8f0;
+  --text-large: #cbd5e1;
+  --text-medium: #94a3b8;
+  --text-small: #94a3b8;
+  --hover-color: #10b981; /* Keeping the emerald hover color */
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text-small);
+  background: linear-gradient(to bottom right, var(--background-start), var(--background-end));
+  min-height: 100vh;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+h1 {
+  color: var(--text-largest);
 }
+
+h2,
+h3 {
+  color: var(--text-large);
+}
+
+h4,
+h5,
+h6 {
+  color: var(--text-medium);
+}
+
+.hover-effect:hover {
+  color: var(--hover-color);
+}
+
+.dot-pattern {
+  background-image: 
+    linear-gradient(to bottom right, var(--background-start), var(--background-end));
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.dot-pattern::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 30px 30px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+form {
+  position: relative;
+  z-index: 1;
+}
+
+input, textarea {
+  position: relative;
+  z-index: 2;
+}
+
+/* Add rounded corners to common elements */
+.container, section, article, .card, button, input, textarea {
+  @apply rounded-lg;
+}
+
+/* Add rounded corners to images */
+img {
+  @apply rounded-lg;
+}
+
+/* Add slightly rounded corners to smaller elements */
+.btn, .tag, .badge {
+  @apply rounded-md;
+}
+
+/* Add more rounded corners to modals and dialogs */
+.modal, .dialog {
+  @apply rounded-xl;
+}
+
