@@ -64,21 +64,21 @@ export default function Home() {
             {[
               {
                 id: 1,
+                title: "Recipe Picker",
+                description: "Built an intelligent recipe recommendation system using machine learning to help users discover recipes based on their preferences and available ingredients, reducing food waste.",
+                link: "/projects/recipe-picker"
+              },
+              {
+                id: 2,
                 title: "Sheep Facial Recognition (AI)",
                 description: "Developed regression models using Convolutional Neural Networks (CNNs) and cascaded networks to accurately locate facial landmarks, enabling unique identification of individual sheep.",
                 link: "/projects/sheep-facial-recognition"
               },
               {
-                id: 2,
+                id: 3,
                 title: "Student Course Selection Website",
                 description: "Created a course selection website using React and Flask, allowing students to search for courses, manage timetables, and leave comments and ratings.",
                 link: "/projects/course-selection"
-              },
-              {
-                id: 3,
-                title: "Recipe Picker",
-                description: "Built an intelligent recipe recommendation system using machine learning to help users discover recipes based on their preferences and available ingredients, reducing food waste.",
-                link: "/projects/recipe-picker"
               }
             ].map((project) => (
               <div
