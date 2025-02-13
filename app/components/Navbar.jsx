@@ -71,7 +71,7 @@ export default function Navbar() {
             ))}
           </ul>
           <a
-            href="/resume.pdf"
+            href="/Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="px-4 py-2 border border-teal-500 text-teal-500 rounded-xl hover:bg-teal-500 hover:text-white transition-all duration-200"
