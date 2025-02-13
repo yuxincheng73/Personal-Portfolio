@@ -45,23 +45,25 @@ export default function SheepFacialRecognition() {
             <br/>
             <div className="my-6 grid grid-cols-2 gap-4">
               <div>
-                <img 
-                  src="/images/sheep-facial-recognition.png" 
-                  alt="Sheep facial recognition system showing detected landmarks" 
-                  className="rounded-lg w-full border border-slate-700/30"
-                />
+                <div className="h-[350px] overflow-y-auto">
+                  <img 
+                    src="/images/sheep-facial-recognition/sfr_1.png" 
+                    alt="Sheep facial recognition system showing detected landmarks" 
+                    className="rounded-xl w-full border-2 border-slate-600/30 shadow-lg shadow-slate-900/50 hover:border-emerald-500/30 transition-all duration-300 hover:shadow-emerald-900/20 opacity-80 hover:opacity-100"
+                  />
+                </div>
                 <p className="text-sm text-slate-400 text-center mt-2">
-                  Example of facial landmark detection on a sheep, showing the 8 key points used for identification
+                  Unique Sheep Identification Lifecycle
                 </p>
               </div>
-              <div>
+              <div className="h-[380px]">
                 <img 
-                  src="/images/sheep-facial-recognition.png" 
+                  src="/images/sheep-facial-recognition/sfr_2.png" 
                   alt="Sheep facial recognition system showing detected landmarks" 
-                  className="rounded-lg w-full border border-slate-700/30"
+                  className="rounded-xl w-full border-2 border-slate-600/30 shadow-lg shadow-slate-900/50 hover:border-emerald-500/30 transition-all duration-300 hover:shadow-emerald-900/20 opacity-80 hover:opacity-100"
                 />
                 <p className="text-sm text-slate-400 text-center mt-2">
-                  Example of facial landmark detection on a sheep, showing the 8 key points used for identification
+                  Welfare assessment system flowchart
                 </p>
               </div>
             </div>
@@ -73,12 +75,12 @@ export default function SheepFacialRecognition() {
             <br/>
             <div className="my-6">
               <img 
-                src="/images/sheep-facial-recognition.png" 
+                src="/images/sheep-facial-recognition/sfr_3.png" 
                 alt="Sheep facial recognition system showing detected landmarks" 
-                className="rounded-lg w-full max-w-3xl mx-auto border border-slate-700/30"
+                className="rounded-xl w-full max-w-3xl mx-auto border-2 border-slate-600/30 shadow-lg shadow-slate-900/50 hover:border-emerald-500/30 transition-all duration-300 hover:shadow-emerald-900/20 opacity-80 hover:opacity-100"
               />
               <p className="text-sm text-slate-400 text-center mt-2">
-                Example of facial landmark detection on a sheep, showing the 8 key points used for identification
+                CNN architecture for facial landmark detection
               </p>
             </div>
             <p>For facial landmark localization, I explored cascaded convolutional neural networks (CNNs) to iteratively refine landmark predictions. 
@@ -91,27 +93,15 @@ export default function SheepFacialRecognition() {
               to expand the dataset to 640 images. Training images helped the model learn, while validation images provided an unbiased evaluation of 
               its performance.</p>
             <br />
-            <div className="my-6 grid grid-cols-2 gap-4">
-              <div>
-                <img 
-                  src="/images/sheep-facial-recognition.png" 
-                  alt="Sheep facial recognition system showing detected landmarks" 
-                  className="rounded-lg w-full border border-slate-700/30"
-                />
-                <p className="text-sm text-slate-400 text-center mt-2">
-                  Example of facial landmark detection on a sheep, showing the 8 key points used for identification
-                </p>
-              </div>
-              <div>
-                <img 
-                  src="/images/sheep-facial-recognition.png" 
-                  alt="Sheep facial recognition system showing detected landmarks" 
-                  className="rounded-lg w-full border border-slate-700/30"
-                />
-                <p className="text-sm text-slate-400 text-center mt-2">
-                  Example of facial landmark detection on a sheep, showing the 8 key points used for identification
-                </p>
-              </div>
+            <div className="my-6">
+              <img 
+                src="/images/sheep-facial-recognition/sfr_4.png" 
+                alt="Sheep facial recognition system showing detected landmarks" 
+                className="rounded-xl w-full max-w-3xl mx-auto border-2 border-slate-600/30 shadow-lg shadow-slate-900/50 hover:border-emerald-500/30 transition-all duration-300 hover:shadow-emerald-900/20 opacity-80 hover:opacity-100"
+              />
+              <p className="text-sm text-slate-400 text-center mt-2">
+                Example of facial landmark detection on a sheep, showing the 8 key points used for identification
+              </p>
             </div>
           </section>
 
@@ -135,25 +125,18 @@ export default function SheepFacialRecognition() {
             <p className="text-slate-400">
               These results demonstrate the viability of automated sheep identification through facial recognition, though further improvements could be made by expanding the dataset and incorporating additional facial landmarks.
             </p>
-            <div className="my-6">
-              <img 
-                src="/images/sheep-facial-recognition.png" 
-                alt="Sheep facial recognition system showing detected landmarks" 
-                className="rounded-lg w-full max-w-3xl mx-auto border border-slate-700/30"
-              />
-              <p className="text-sm text-slate-400 text-center mt-2">
-                Example of facial landmark detection on a sheep, showing the 8 key points used for identification
-              </p>
-            </div>
 
             <div className="my-6">
-              <video 
-                className="rounded-lg w-full max-w-3xl mx-auto border border-slate-700/30"
-                controls
-              >
-                <source src="/videos/sheep-facial-recognition-demo.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+              <iframe
+                className="rounded-xl w-full max-w-3xl mx-auto border-2 border-slate-600/30 shadow-lg shadow-slate-900/50 hover:border-emerald-500/30 transition-all duration-300 hover:shadow-emerald-900/20 opacity-80 hover:opacity-100"
+                width="100%"
+                height="500"
+                src="https://www.youtube.com/embed/PDaJWA3PSCg" // Replace YOUR_VIDEO_ID_HERE with your actual YouTube video ID
+                title="Sheep Facial Recognition Demo"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
               <p className="text-sm text-slate-400 text-center mt-2">
                 Demo video showing the sheep facial recognition system in action
               </p>

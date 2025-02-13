@@ -8,13 +8,22 @@ export default function CourseSelection() {
           {/* Project Overview */}
           <section className="bg-gray-800 bg-opacity-50 p-8 rounded-xl backdrop-filter backdrop-blur-lg border border-slate-700/30">
             <h2 className="text-2xl font-semibold mb-4 text-slate-300">Project Overview</h2>
-            <p className="text-slate-400">
-              A comprehensive course selection platform built with React and Flask, enabling students to efficiently manage their academic schedules.
-              My team of five developed a student course selection website with features to streamline course management. Students can search for courses, organize their timetables, and leave comments and ratings to help others make informed decisions.
-              <br />
-              <br />
-              <b><a href="https://ece444-group4.herokuapp.com/" target="_blank" rel="noopener noreferrer"> Visit the website </a></b>
-            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <p className="text-slate-400">
+                A comprehensive course selection platform built with React and Flask, enabling students to efficiently manage their academic schedules.
+                My team of five developed a student course selection website with features to streamline course management. Students can search for courses, organize their timetables, and leave comments and ratings to help others make informed decisions.
+                <br />
+                <br />
+                <b><a href="https://ece444-group4.herokuapp.com/" target="_blank" rel="noopener noreferrer"> Visit the website </a></b>
+              </p>
+              <img 
+                src="/images/course-selection/cs_1.png"
+                alt="Course Selection Overview"
+                className="rounded-xl w-full border-2 border-slate-600/30 shadow-lg shadow-slate-900/50 hover:border-emerald-500/30 transition-all duration-300 hover:shadow-emerald-900/20 opacity-80 hover:opacity-100"
+                width={800}
+                height={600}
+              />
+            </div>
             
             <h3 className="text-xl font-semibold mt-6 mb-3 text-slate-300">Problem</h3>
             <p className="text-slate-400">
@@ -53,27 +62,15 @@ export default function CourseSelection() {
               To manage collaboration efficiently, we adopted a SCRUM agile development process, holding weekly check-ins to track progress and 
               assign tasks. We used GitHub Project Board to organize user stories and streamline workflow.
             </p>
-            <div className="my-6 grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div>
-                <img 
-                  src="/images/course-selection-architecture.png" 
-                  alt="System Architecture" 
-                  className="rounded-lg w-full border border-slate-700/30"
-                />
-                <p className="text-sm text-slate-400 text-center mt-2">
-                  System architecture diagram showing the interaction between frontend and backend components
-                </p>
-              </div>
-              <div>
-                <img 
-                  src="/images/course-selection-database.png" 
-                  alt="Database Schema" 
-                  className="rounded-lg w-full border border-slate-700/30"
-                />
-                <p className="text-sm text-slate-400 text-center mt-2">
-                  Database schema showing the relationships between different entities
-                </p>
-              </div>
+            <div className="my-6">
+              <img 
+                src="/images/course-selection/cs_2.png" 
+                alt="System Architecture" 
+                className="rounded-xl w-full max-w-3xl mx-auto border-2 border-slate-600/30 shadow-lg shadow-slate-900/50 hover:border-emerald-500/30 transition-all duration-300 hover:shadow-emerald-900/20 opacity-80 hover:opacity-100"
+              />
+              <p className="text-sm text-slate-400 text-center mt-2">
+                System architecture diagram showing the interaction between frontend and backend components
+              </p>
             </div>
           </section>
 
@@ -115,27 +112,47 @@ export default function CourseSelection() {
             For more details, users can click on a course code to view a dedicated page with complete course information. 
             This page also features a comments and ratings section, allowing students to share insights and aid others in decision-making.
             </p>
-            <div className="my-6">
-              <img 
-                src="/images/course-selection-metrics.png" 
-                alt="Performance Metrics Dashboard" 
-                className="rounded-lg w-full max-w-3xl mx-auto border border-slate-700/30"
-              />
-              <p className="text-sm text-slate-400 text-center mt-2">
-                Dashboard showing key performance metrics and user engagement statistics
-              </p>
-            </div>
-            <div className="my-6">
-              <video 
-                className="rounded-lg w-full max-w-3xl mx-auto border border-slate-700/30"
-                controls
-              >
-                <source src="/videos/course-selection-demo.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-              <p className="text-sm text-slate-400 text-center mt-2">
-                Demo video showcasing the course selection process and real-time updates
-              </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <img 
+                  src="/images/course-selection/cs_3.png"
+                  alt="Course Search Interface"
+                  className="rounded-xl w-full h-72 object-cover border-2 border-slate-600/30 shadow-lg shadow-slate-900/50 hover:border-emerald-500/30 transition-all duration-300 hover:shadow-emerald-900/20 opacity-80 hover:opacity-100"
+                />
+                <p className="text-sm text-slate-400 text-center mt-2">
+                  Course search and filtering interface
+                </p>
+              </div>
+              <div>
+                <img
+                  src="/images/course-selection/cs_4.png" 
+                  alt="Course Details Page"
+                  className="rounded-xl w-full h-72 object-cover border-2 border-slate-600/30 shadow-lg shadow-slate-900/50 hover:border-emerald-500/30 transition-all duration-300 hover:shadow-emerald-900/20 opacity-80 hover:opacity-100"
+                />
+                <p className="text-sm text-slate-400 text-center mt-2">
+                  Detailed course information page
+                </p>
+              </div>
+              <div>
+                <img
+                  src="/images/course-selection/cs_5.png"
+                  alt="Timetable View" 
+                  className="rounded-xl w-full h-72 object-cover border-2 border-slate-600/30 shadow-lg shadow-slate-900/50 hover:border-emerald-500/30 transition-all duration-300 hover:shadow-emerald-900/20 opacity-80 hover:opacity-100"
+                />
+                <p className="text-sm text-slate-400 text-center mt-2">
+                  Interactive timetable management
+                </p>
+              </div>
+              <div>
+                <img
+                  src="/images/course-selection/cs_6.png"
+                  alt="Reviews Section"
+                  className="rounded-xl w-full h-72 object-cover border-2 border-slate-600/30 shadow-lg shadow-slate-900/50 hover:border-emerald-500/30 transition-all duration-300 hover:shadow-emerald-900/20 opacity-80 hover:opacity-100"
+                />
+                <p className="text-sm text-slate-400 text-center mt-2">
+                  Course ratings and reviews section
+                </p>
+              </div>
             </div>
           </section>
 

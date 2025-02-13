@@ -48,9 +48,9 @@ export default function RecipePicker() {
             </p>
             <div className="my-6">
               <img 
-                src="/images/recipe-picker-architecture.png" 
+                src="/images/recipe-picker/Database_Design_Layout.png" 
                 alt="System Architecture" 
-                className="rounded-lg w-full max-w-3xl mx-auto border border-slate-700/30"
+                className="rounded-xl w-full max-w-3xl mx-auto border-2 border-slate-600/30 shadow-lg shadow-slate-900/50 hover:border-emerald-500/30 transition-all duration-300 hover:shadow-emerald-900/20 opacity-80 hover:opacity-100"
               />
               <p className="text-sm text-slate-400 text-center mt-2">
                 System architecture showing the recommendation engine and API integration
@@ -71,7 +71,7 @@ export default function RecipePicker() {
               <img 
                 src="/images/recipe-picker-architecture.png" 
                 alt="System Architecture" 
-                className="rounded-lg w-full max-w-3xl mx-auto border border-slate-700/30"
+                className="rounded-xl w-full max-w-3xl mx-auto border-2 border-slate-600/30 shadow-lg shadow-slate-900/50 hover:border-emerald-500/30 transition-all duration-300 hover:shadow-emerald-900/20 opacity-80 hover:opacity-100"
               />
               <p className="text-sm text-slate-400 text-center mt-2">
                 System architecture showing the recommendation engine and API integration
@@ -110,7 +110,7 @@ export default function RecipePicker() {
 
             <div className="my-6">
               <video 
-                className="rounded-lg w-full max-w-3xl mx-auto border border-slate-700/30"
+                className="rounded-xl w-full max-w-3xl mx-auto border-2 border-slate-600/30 shadow-lg shadow-slate-900/50 hover:border-emerald-500/30 transition-all duration-300 hover:shadow-emerald-900/20 opacity-80 hover:opacity-100"
                 controls
               >
                 <source src="/videos/recipe-picker-demo.mp4" type="video/mp4" />
