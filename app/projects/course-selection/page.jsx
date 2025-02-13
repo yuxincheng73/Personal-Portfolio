@@ -54,7 +54,7 @@ export default function CourseSelection() {
               The frontend utilizes React with Material-UI for a polished user interface, while the backend is powered by Flask and SQLAlchemy 
               for robust data management.
               <br /><br />
-              We began by selecting a monolithic architecture, given the project's small scale and limited number of contributors. 
+              We began by selecting a monolithic architecture, given the project&apos;s small scale and limited number of contributors. 
               This approach avoided the complexity and overhead of a cloud-based setup. 
               To structure the website, we followed the MVC framework, separating concerns into three key components: 
               the user interface, request handling, and data storage.
@@ -184,4 +184,4 @@ export default function CourseSelection() {
       </div>
     </div>
   )
-} 
+};

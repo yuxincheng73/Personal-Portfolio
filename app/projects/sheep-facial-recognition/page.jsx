@@ -41,7 +41,7 @@ export default function SheepFacialRecognition() {
           <section className="bg-gray-800 bg-opacity-50 p-8 rounded-xl backdrop-filter backdrop-blur-lg border border-slate-700/30">
             <h2 className="text-2xl font-semibold mb-4 text-slate-300">Technical Details</h2>
             <p>We began by analyzing existing solutions for sheep traceability and welfare assessment, identifying gaps our AI-driven system needed 
-              to address. Given the problem's complexity, we divided it into two key components: unique sheep identification and welfare assessment.</p>
+              to address. Given the problem&apos;s complexity, we divided it into two key components: unique sheep identification and welfare assessment.</p>
             <br/>
             <div className="my-6 grid grid-cols-2 gap-4">
               <div>
@@ -171,4 +171,4 @@ export default function SheepFacialRecognition() {
       </div>
     </div>
   )
-} 
+};

@@ -40,17 +40,17 @@ export default function Home() {
           <h2 className="text-4xl font-bold mb-6 text-slate-200">About Me</h2>
           <div className="max-w-2xl">
             <p className="mb-4 text-slate-400">
-              Hello! Hi, I'm Yu Xin Cheng, a passionate software developer with a keen interest in building innovative and efficient solutions. 
+              Hello! Hi, I&apos;m Yu Xin Cheng, a passionate software developer with a keen interest in building innovative and efficient solutions. 
               I love creating side projects and exploring new technologies to solve real-world problems. 
               My technical expertise spans across a wide range of programming languages and tools, including Python, Java, React, SQL, and more.
             </p>
             <p className="mb-4 text-slate-400">
-              I'm always looking to challenge myself and expand my knowledge. 
-              Currently, I'm working on fun side projects like a Recipe Chooser app that simplifies meal planning, 
+              I&apos;m always looking to challenge myself and expand my knowledge. 
+              Currently, I&apos;m working on fun side projects like a Recipe Chooser app that simplifies meal planning, 
               and a Personalized Spotify Music Recommender that offers tailored music suggestions based on individual preferences.
             </p>
             <p className="text-slate-400">
-              When I'm not coding, I enjoy experimenting with new recipes in the kitchen, staying active at the gym, or exploring new destinations travelling.
+              When I&apos;m not coding, I enjoy experimenting with new recipes in the kitchen, staying active at the gym, or exploring new destinations travelling.
             </p>
           </div>
         </div>
@@ -157,5 +157,5 @@ export default function Home() {
       </section>
     </div>
   )
-}
+};
 
